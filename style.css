@@ -54,6 +54,18 @@ border: 0px;
     border: 0;
 }
 
+.btn-warning {
+    background-color: white;
+    color: rgba(68, 37, 128, 1);
+    border: 0;
+}
+
+h2{
+    color: rgba(68, 37, 128, 1);
+    font-size: 15px;
+    font-weight: 700; 
+}
+
 h3{
     color: rgba(68, 37, 128, 1);
     font-size: 24px;
