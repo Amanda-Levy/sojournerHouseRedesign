@@ -4,6 +4,31 @@ body {
     color: rgba(68, 37, 128, 1);
     font-weight: 400;
     font-size: 13px;
+    text-align: center;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.backgroundImage{
+    position: relative;
+    top: 0;
+    left:0;
+}
+
+.captionImg {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+.textonBox {
+    position: absolute;
+    top: 1%;
+    left: 1%;
 }
 
 .btn-secondary {
@@ -17,6 +42,33 @@ border: 0px;
     background-color: rgba(68, 37, 128, 1);
     color: white;
     border: 0px;
+}
+
+.btn-primary {
+    background-color: rgba(0, 194, 203, 1);
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 0;
+}
+
+h3{
+    color: rgba(68, 37, 128, 1);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h4{
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 h5{

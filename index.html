@@ -1,6 +1,12 @@
 <!-- navigation bar code is from Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/navbar/ -->
 <!-- for dropdown help, I used the Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/dropdowns/-->
 <!-- for text truncating help, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/utilities/text/-->
+<!-- for help placing two images on top of each other, I used code from https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html-->
+<!-- for help on writing an apostrophe https://www.educative.io/answers/how-to-create-the-apostrophe-symbol-in-html-->
+<!-- for help with adding the video, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/utilities/embed/ -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -66,12 +72,92 @@
               <button class="btn btn-secondary my-2 my-sm-0" type="button" style="margin-left: 1rem;">Donate</button>
               </ul>
             </div>
-          </nav>
+        </nav>
+
           <div class="d-flex container-fluid" style="background-color: rgba(68, 37, 128, 1); justify-content: space-between; align-items:baseline;">
-            <h5 class="d-inline-block text-truncate" style="max-width: 473px;">Save the date:  11/18/2022 Royal Garden Party, the 12th Annual Masquerade Ball at The Graduate Providence</h5>
+            <h5 class="d-inline-block text-truncate" style="max-width: 30rem">Save the date:  11/18/2022 Royal Garden Party, the 12th Annual Masquerade Ball at The Graduate Providence</h5>
             <button class="btn btn-light dropdown-toggle" type="button" id="flierDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click for the event flier</button>
           </div>
-          <div class="d-flex container-fluid" style="justify-content: center; align-items:center; margin: 0px; padding: 0px;">
-            <img src="SH ppl lying on floor Medium.jpeg" alt="people lying on the floor smiling" style="width: 100vw; height: 60vh;">
+
+          <div class="d-flex container-fluid parent" style="margin: 0px; padding: 0px;">
+            <img class="backgroundImage"src="SH ppl lying on floor Medium.jpeg" alt="people lying on the floor smiling" style="width: 100vw; height: 60vh;">
+            <img class="captionImg" src="Main image caption.svg" alt="caption: everyone deserves safe, healthy relationships" style="width: 30vw; height: 15vh; align-self: center; justify-self: center;">
           </div>
-    </body>
+
+          <div class="d-flex container-fluid" style="background-color: rgba(68, 37, 128, 1); justify-content: space-between; align-items:baseline;">
+          <h4>The mission of Sojourner House is to promote healthy relationships by providing culturally sensitive support, advocacy, housing, and education for victims and survivors of domestic violence, sexual assault, and human trafficking; and to effect systems change.</h4>
+          </div>
+
+          <div class="d-flex container-fluid">
+            <div class="row" style="padding-top: 1rem;">
+              <div class="col-sm-12 col-md-4 col-lg-4 pb-5">
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <img src="Get Help Image Button.svg" alt="Get Help image button" style="justify-self:center; width: 100%;">
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <h6 style="text-align: center;">Our advocates assist victims of violence as they navigate their path towards a violence free life. Advocates can make recommendations and connect victims with helpful resources, but most of all, advocates listen. They do not judge, give advice, or pressure victims to make changes before they are ready.</h6>
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <button class="btn btn-primary my-2 my-sm-0" type="button">Call or Make an Appointment</button>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-4 col-lg-4 pb-5">
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <img src="Support Us Image Button.svg" alt="Support Us image button" style="justify-self:center; width: 100%;">
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <h6 style="text-align: center;">When you donate to Sojourner House, your dollars help to fund housing, support services, and advocacy for all those who have experienced domestic violence or sexual abuse.</h6>
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <button class="btn btn-primary my-2 my-sm-0" type="button">Make a Donation</button>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-4 col-lg-4 pb-5">
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <img src="About Us Image Button.svg" alt="About Us image button" style="justify-self:center; width: 100%;">
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <h6 style="text-align: center;">Show your commitment to ending domestic violence and sexual abuse forever by joining us at an event, volunteering your time and expertise, or applying for a career with us. We rely every day on our community to support our work.</h6>
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div id ="history" class="d-flex container-fluid" style="background-color: rgba(247, 255, 247, 1); justify-content: center;">
+            <h3>Sojourner House: Past, Present, Future</h3>
+            <p>Sojourner House&#39;s 45th anniversary video, celebrating our 45 years of lifesaving services and advocacy in Rhode Island.</p>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=gYu1nt0mig8" allowfullscreen></iframe>
+          </div>
+
+
+          <div id="survey" class="d-flex container-fluid" style="background-color: rgba(241, 241, 241, 1); justify-content:center">
+            <div class="row" style="padding-top: 1rem;">
+              <div class="col-md-6 pb-5">
+                <h3>Online Harassment and Cyber Stalking Survey</h3>
+                <p>Have you ever experienced online harassment and/or cyber-stalking?</p>
+                <p>Sojourner House recently launched an &#39;Online Harassment and Cyber-Stalking Survey&#39; and we are looking for your help with spreading the word about and/or participating in the survey!</p> 
+                <p>Please click on the button below to participate in the survey.</p>
+                <button class="btn btn-primary my-2 my-sm-0" type="button">Take Our Survey Here</button>
+              </div>
+
+              <div class="col-md-6 pb-5">
+                <img src="survey image.svg" alt="image of someone taking a survey" style="width: 65%; align-self: center; justify-self:center">
+              </div>
+            </div> 
+          </div>
+
+          <div id="testimony" class="d-flex container-fluid">
+            <h3>Testimony</h3>
+            <img src="Testimony Box with text.svg" alt="dialogue box with testimony text" style="width: 90%;">
+          </div>
+
+        </body>
