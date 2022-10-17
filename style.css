@@ -1,0 +1,14 @@
+body {
+    background-color:white;
+    font-family: 'Source Sans Pro';
+    color: rgba(68, 37, 128, 1);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.btn-secondary {
+background-color: rgba(164, 198, 79, 1);
+color:black;
+font-weight: bold;
+border: 0px;
+}
