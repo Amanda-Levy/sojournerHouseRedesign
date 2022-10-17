@@ -1,4 +1,6 @@
 <!-- navigation bar code is from Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+<!-- for dropdown help, I used the Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/dropdowns/-->
+<!-- for text truncating help, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/utilities/text/-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,61 +11,67 @@
         <title>Sojourner House - Redesigned </title>
     </head>
     <body>
-        <div class="container-fluid" style="background-color:rgba(217, 217, 217, 1);">
-            <img src="globe icon.svg" alt="language icon" style="width: 30px; height: 30px; align-items:left; padding-left: 10px;">
-            <div style="align-items: right; justify-content: center; padding-right: 10px;">
-                <img src="phone icon.svg" alt="phone icon" style="width: 30px; height: 30px">
-                <p style="text-transform: uppercase;">Helpline 401-765-3232</p>
-                <img src="location icon.svg" alt="location icon" style="width: 30px; height: 30px">
-                <p>386 Smith Street, Providence, RI 02906</p>
+        <div class="d-flex container-fluid" style="background-color:rgba(217, 217, 217, 1); justify-content: space-between;">
+            <img src="globe icon.svg" alt="language icon" style="width: 30px; height: 20px; align-items:center; padding-left: 10px;">
+            <div class="d-flex" style="align-items:flex-end; justify-content: center; padding-right: 10px;">
+                <img src="phone icon.svg" alt="phone icon" style="width: 15px; height: 25px; justify-content: center; margin-left: 6px;align-items: center;">
+                <h6 style="text-transform: uppercase; align-items: center; justify-content: center; margin-left: 4px;">Helpline 401-765-3232</h6>
+                <img src="location icon.svg" alt="location icon" style="width: 20px; height: 25px; justify-content: center; align-items: flex-start; margin-left: 6px;">
+                <h6 style="justify-content:center; margin-left:4px">386 Smith Street, Providence, RI 02906</h6>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a class="navbar-brand" href="#" style="justify-content: center;">
+        <nav class="d-flex navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-between;">
+                <a class="navbar-brand" href="#" style="justify-content: center; align-items: baseline;">
                     <img src="SH House Logo.svg" width="60px" height="60px" alt="Sojourner House logo image">
                     <img src="SH Logo Text.svg" widtt="45px" height="30px" alt="Sojourner House logo text">
                   </a>
-              <ul class="navbar-nav mr-auto" style="align-items:center">
-                <li class="nav-item dropdown align-items-center">
+              <ul class="d-flex navbar-nav mr-2">
+                <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
                     <img src="warning icon.svg" alt="Get Help icon" style="width: 10px; height: 10px">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarGetHelp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Get Help
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-menu" aria-labelledby="navbarGetHelp">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
                     <img src="heart icon.svg" alt="Support Us icon" style="width: 10px; height: 10px">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarSupportUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Support Us 
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-menu" aria-labelledby="navbarSupportUs">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
                     <img src="info icon.svg" alt="About Us icon" style="width: 10px; height: 10px">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       About Us
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarAboutUs">
                       <a class="dropdown-item" href="#">Action</a>
                       <a class="dropdown-item" href="#">Another action</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                   </li>
-              </ul>
-              <img src="vertical line.svg" alt="vertical line" style="width: 2px; height: 40px;">
               <button class="btn btn-secondary my-2 my-sm-0" type="button" style="margin-left: 1rem;">Donate</button>
+              </ul>
             </div>
           </nav>
+          <div class="d-flex container-fluid" style="background-color: rgba(68, 37, 128, 1); justify-content: space-between; align-items:baseline;">
+            <h5 class="d-inline-block text-truncate" style="max-width: 473px;">Save the date:  11/18/2022 Royal Garden Party, the 12th Annual Masquerade Ball at The Graduate Providence</h5>
+            <button class="btn btn-light dropdown-toggle" type="button" id="flierDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click for the event flier</button>
+          </div>
+          <div class="d-flex container-fluid" style="justify-content: center; align-items:center; margin: 0px; padding: 0px;">
+            <img src="SH ppl lying on floor Medium.jpeg" alt="people lying on the floor smiling" style="width: 100vw; height: 60vh;">
+          </div>
     </body>

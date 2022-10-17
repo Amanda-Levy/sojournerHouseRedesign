@@ -12,3 +12,22 @@ color:black;
 font-weight: bold;
 border: 0px;
 }
+
+.btn-light {
+    background-color: rgba(68, 37, 128, 1);
+    color: white;
+    border: 0px;
+}
+
+h5{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+h6{
+    font-weight: 400;
+    font-size: 13px;
+}
