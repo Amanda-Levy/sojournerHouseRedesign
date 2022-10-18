@@ -1,4 +1,4 @@
-<!-- navigation bar code is from Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+<!-- for help with the code for the navigation bar, I used the Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/navbar/ -->
 <!-- for dropdown help, I used the Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/dropdowns/-->
 <!-- for text truncating help, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/utilities/text/-->
 <!-- for help placing two images on top of each other, I used code from https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html-->
@@ -26,12 +26,18 @@
                 <h6 style="justify-content:center; margin-left:4px">386 Smith Street, Providence, RI 02906</h6>
             </div>
         </div>
-        <nav class="d-flex navbar navbar-expand-lg navbar-light bg-light">
-            <div class="d-flex collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-between;">
-                <a class="navbar-brand" href="#" style="justify-content: center; align-items: baseline;">
-                    <img src="SH House Logo.svg" width="60px" height="60px" alt="Sojourner House logo image">
-                    <img src="SH Logo Text.svg" widtt="45px" height="30px" alt="Sojourner House logo text">
-                  </a>
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex navbar-brand" id="navbarLogo" style="align-items: baseline;">
+              <div class="d-flex" style="justify-content: center; align-items:center;">
+                  <img src="SH House Logo.svg" width="70px" height="70px" alt="Sojourner House logo image">
+                  <img src="SH Logo Text.svg" height="30px" alt="Sojourner House logo text" style="padding-left: 0.5rem;">
+              </div>
+            </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse justify-content-right" id="navbarTogglerDemo01" style="justify-content: right;">
               <ul class="d-flex navbar-nav mr-2">
                 <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
                     <img src="warning icon.svg" alt="Get Help icon" style="width: 10px; height: 10px">
@@ -39,10 +45,10 @@
                     Get Help
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarGetHelp">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Item</a>
+                    <a class="dropdown-item" href="#">Item</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Item</a>
                   </div>
                 </li>
                 <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
@@ -51,10 +57,10 @@
                     Support Us 
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarSupportUs">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Item</a>
+                    <a class="dropdown-item" href="#">Item</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Item</a>
                   </div>
                 </li>
                 <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
@@ -63,16 +69,16 @@
                       About Us
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarAboutUs">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Item</a>
+                      <a class="dropdown-item" href="#">Item</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Item</a>
                     </div>
                   </li>
               <button class="btn btn-secondary my-2 my-sm-0" type="button" style="margin-left: 1rem;">Donate</button>
               </ul>
             </div>
-        </nav>
+          </nav>
 
           <div class="d-flex container-fluid" style="background-color: rgba(68, 37, 128, 1); justify-content: space-between; align-items:baseline;">
             <h5 class="d-inline-block text-truncate" style="max-width: 30rem">Save the date:  11/18/2022 Royal Garden Party, the 12th Annual Masquerade Ball at The Graduate Providence</h5>
@@ -161,7 +167,7 @@
           </div>
 
 
-          <div id="newsletter" class="container-fluid" style="background-color:rgba(241, 241, 241, 1);">
+          <div id="newsletter" class="container-fluid" style="background-color:rgba(241, 241, 241, 1); padding-bottom: 3rem;">
             <h3 style="text-align: left; padding-left: 1rem; padding-top: 2rem;">Newsletter</h3>
             <div class="row">
               <div class="col-sm-12 col-md-6 pb-5" style="padding-top: 2rem;">
@@ -188,39 +194,82 @@
             </div>
 
             <div class="row">
-              <div class="col-sm-12 col-md-6 col-lg-4 pb-5" style="padding-top: 2rem;">
-                <div style="background-color: white;">
-                <p style="color:rgba(0, 194, 203, 1); text-align: left; padding-top: 1rem;">Sojo News</p>
-                <h2 style="text-align: left;">FY 2021 Impact Report</h2>
-                <p style="text-align: left;">June 3, 2022</p>
-                <p style="padding-bottom: 1rem; text-align: left;">Letter from the Executive Director: There is a common cliché about taking two steps forward and one step back –or, even more dramatically, taking one step forward and two steps back. The idea, of course, is that there are experiences that feel like false starts, or movements toward progress, only then to wind up where…</p>
-                <button class="btn btn-warning my-2 my-sm-0" type="button">Read More --></button>
+                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 1rem;">
+                  <div style="background-color: white;padding-left:0.5rem; padding-right:0.5rem;">
+                  <p style="color:rgba(0, 194, 203, 1); text-align: left; padding-top: 1rem;">Sojo News</p>
+                  <h2 style="text-align: left;">FY 2021 Impact Report</h2>
+                  <p style="text-align: left;">June 3, 2022</p>
+                  <p style="padding-bottom: 1rem; text-align: left;">Letter from the Executive Director: There is a common cliché about taking two steps forward and one step back –or, even more dramatically, taking one step forward and two steps back. The idea, of course, is that there are experiences that feel like false starts, or movements toward progress, only then to wind up where…</p>
+                  <button class="btn btn-link vertical-align-left" type="button">Read More --></button>
+                  </div>
                 </div>
-              </div>
-
-              <div class="col-sm-12 col-md-6 col-lg-4 pb-5" style="padding-top: 2rem;">
-                <div style="background-color: white;">
-                  <img src="bio image.svg" alt="image of Sojo ambassador" style="width: 100%;">
-                <p style="color:rgba(0, 194, 203, 1); text-align: left;">Press and Media</p>
-                <h2 style="text-align: left;">Five Questions with Sojo Ambassador Sara Kleiman</h2>
-                <p style="text-align: left;">August 13, 2021</p>
-                <p style="padding-bottom: 1rem; text-align: left;">Every person is entitled to be safe and free from domestic and sexual violence. Sojourner House provides invaluable services to the community, which are of even more importance during the pandemic. – Sara Kleiman Why do you support Sojourner House? I support Sojourner House because I fully believe in their mission. Every person is entitled to…</p>
-                <button class="btn btn-warning my-2 my-sm-0" type="button">Read More --></button>
+  
+                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 1rem;">
+                  <div style="background-color: white;padding-left:0.5rem; padding-right:0.5rem;">
+                    <img src="bio image.svg" alt="image of Sojo ambassador" style="width: 100%;">
+                  <p style="color:rgba(0, 194, 203, 1); text-align: left;">Press and Media</p>
+                  <h2 style="text-align: left;">Five Questions with Sojo Ambassador Sara Kleiman</h2>
+                  <p style="text-align: left;">August 13, 2021</p>
+                  <p style="padding-bottom: 1rem; text-align: left;">Every person is entitled to be safe and free from domestic and sexual violence. Sojourner House provides invaluable services to the community, which are of even more importance during the pandemic. – Sara Kleiman Why do you support Sojourner House? I support Sojourner House because I fully believe in their mission. Every person is entitled to…</p>
+                  <button class="btn btn-link my-2 my-sm-0" type="button">Read More --></button>
+                  </div>
                 </div>
-              </div>
-              
-              <div class="col-sm-12 col-md-6 col-lg-4 pb-5" style="padding-top: 2rem;">
-                <div style="background-color: white; padding-top: 1rem;">
-                <p style="color:rgba(0, 194, 203, 1); text-align: left;">Press and Media</p>
-                <h2 style="text-align: left;">Options RI Magazine: Services for LGBTQ+ Survivors of Domestic Abuse Enhanced During Covid</h2>
-                <p style="text-align: left;">August 4, 2021</p>
-                <p style="padding-bottom: 1rem; text-align: left;">Kassie Hawkins, Sojourner House Manager of LGBTQ+ Programs, wrote the following for Options RI Magazine: COVID has been difficult for everyone, but especially LGBTQ+ victims of abuse, many of whom were forced to shelter in places with abusive and unaffirming partners or parents. On top of already existing barriers such as fear of being outed,…</p>
-                <button class="btn btn-warning my-2 my-sm-0" type="button">Read More --></button>
+                
+                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 1rem;">
+                  <div style="background-color: white; padding-left:0.5rem; padding-right:0.5rem;">
+                  <p style="color:rgba(0, 194, 203, 1); text-align: left; padding-top: 1rem;">Press and Media</p>
+                  <h2 style="text-align: left;">Options RI Magazine: Services for LGBTQ+ Survivors of Domestic Abuse Enhanced During Covid</h2>
+                  <p style="text-align: left;">August 4, 2021</p>
+                  <p style="padding-bottom: 1rem; text-align: left;">Kassie Hawkins, Sojourner House Manager of LGBTQ+ Programs, wrote the following for Options RI Magazine: COVID has been difficult for everyone, but especially LGBTQ+ victims of abuse, many of whom were forced to shelter in places with abusive and unaffirming partners or parents. On top of already existing barriers such as fear of being outed,…</p>
+                  <button class="btn btn-link my-2 my-sm-0" type="button">Read More --></button>
+                  </div>
                 </div>
-              </div>
 
             </div>
 
+          </div>
+
+
+          <div id="footerInfo" class="d-flex container-fluid infoFooter">
+            <div class="row">
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">About</h3>
+                <p style="padding-bottom: 1rem; text-align: left;">For over 45 years, Sojourner House has served thousands of victims and survivors of domestic abuse, sexual violence, and human trafficking. Thanks to our supporters, we are able to offer wraparound services such as support groups, emergency shelter, transitional and permanent supportive housing, sexual health advocacy, and emotional support. We believe that everyone deserves a safe, healthy home, and proudly house all genders.</p>
+              </div>
+
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">Mission</h3>
+                <p style="padding-bottom: 1rem; text-align: left;">The mission of Sojourner House is to promote healthy relationships by providing culturally sensitive support, advocacy, housing, and education for victims and survivors of domestic violence, sexual assault, and human trafficking; and to effect systems change.
+                </p>
+              </div>
+
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">Contact</h3>
+                <p style="text-align: left;">386 Smith Street, Providence, RI 02908</p>
+                <p style="text-align: left;">Office: 401-861-6191</p>
+                <p style="text-align: left;">Fax: 401-861-6157 </p> 
+                <p style="text-align: left;">Housing Office: (401) 808-6889</p>
+                <p style="text-align: left;">Email: info@sojournerri.org</p>
+                <p style="padding-bottom:1rem; text-align: left;">*Please note that this email account is checked during business hours (Monday – Friday 9:00 a.m. to 5:00 p.m.). If you need an immediate response, please call our 24/7 hotline at 401-765-3232.</p>
+              </div>
+
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">Seeking Help?</h3>
+                <p style="text-align: left;">CALL THE HELPLINE: 401-765-3232</p>
+                <p style="text-align: left;">We do not use Caller ID, and we always block our outgoing calls for your safety.</p>
+                <p style="text-align: left;">*If you are in immediate danger and need emergency assistance, call 911</p>
+              </div>
+            </div>  
+          </div>
+
+          <div id="overallFooter" class="d-flex container-fluid" style="background-color: rgba(241, 241, 241, 1); justify-content: space-between;">
+            <button class="btn btn-dark my-2 my-sm-0" type="button"> ↰    Escape</button>
+            <p style="justify-self: center; padding-top: 0.5rem;">2022 Sojourner House</p>
+            <div>
+              <button class="btn btn-danger my-2 my-sm-0" type="button"></button>
+              <button class="btn btn-success my-2 my-sm-0" type="button"></button>
+              <button class="btn btn-info my-2 my-sm-0" type="button"></button>
+            </div>
           </div>
 
         </body>
